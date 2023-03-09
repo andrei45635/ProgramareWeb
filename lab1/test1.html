@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sortie Registration</title>
+</head>
+
+<body>
+<h1 style="color:seagreen;"> Pilot registration </h1>
+<h3 style="color:darkblue;"> United States Air Force Central Command
+    <br> Arlington County, Virginia, United States
+</h3>
+<h5>
+    <a href="https://www.af.mil/" style="color:steelblue;"> USAF - CENT </a>
+</h5>
+<form method="GET">
+    <table>
+        <tr>
+            <td align="left"><label>
+                <strong> First Name: </strong>
+                <input type="text" name="firstname" style="text-align: left;">
+            </label></td>
+        </tr>
+
+        <tr>
+            <td align="left"><label>
+                <strong> Last Name: </strong>
+                <input type="text" name="lastname" style="text-align: left;">
+            </label></td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <label>
+                    <strong> CO Type: </strong>
+                    <input type="checkbox" name="cog">
+                </label> Company-Grade
+                <label>
+                    <input type="checkbox" name="fgo">
+                </label>Field-Grade
+            </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <strong> Base: </strong>
+                <label>
+                    <input type="text" name="base">
+                </label>
+            </td>
+        </tr>
+
+        <tr>
+            <td align="left"><label>
+                <strong> Current domicile: </strong>
+                <input type="text" name="domicile" required>
+            </label></td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <strong> Country of Origin: </strong>
+                <label>
+                    <select name="country">
+                        <option value="us"> United States of America</option>
+                        <option value="ustr"> United States Territories</option>
+                        <option value="uk"> Great Britain</option>
+                        <option value="jp"> Japan</option>
+                    </select>
+                </label>
+            </td>
+        </tr>
+
+        <tr>
+            <td align="left"><label>
+                <strong> Rank: </strong>
+                <input type="text" name="rank" required>
+            </label></td>
+        </tr>
+
+        <tr>
+            <td align="left"><label>
+                <strong> Serial Number: </strong>
+                <input type="text" name="serial" required>
+            </label></td>
+        </tr>
+
+        <tr>
+            <td align="left"><label>
+                <strong> Email: </strong>
+                <input type="email" name="email" required>
+            </label></td>
+        </tr>
+
+        <tr>
+            <td align="left"><label>
+                <strong> Date of Birth: </strong>
+                <input type="date" name="birthday">
+            </label></td>
+        </tr>
+
+        <tr>
+            <td align="left"><label>
+                <strong> Gender: </strong>
+                <input type="radio" name="gender" value="Male">
+            </label> Male
+                <label>
+                    <input type="radio" name="gender" value="Female">
+                </label> Female
+            </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <strong> Carrier: </strong>
+                <label>
+                    <select name="carrier">
+                        <option value="grf"> Gerald R. Ford</option>
+                        <option value="jfk"> John F. Kennedy</option>
+                        <option value="grf"> George H.W. Bush</option>
+                        <option value="nmtz"> Ronald Reagan</option>
+                        <option value="nmtz"> Harry S. Truman</option>
+                    </select>
+                </label>
+            </td>
+        </tr>
+
+        <tr>
+            <td align="left">
+                <strong> Preferred Aircraft: </strong>
+                <br>
+                <label>
+                    <select name="aircraft" multiple>
+                        <option value="fjet"> Fighter Jet</option>
+                        <option value="ajet"> Air Superiority Jet</option>
+                        <option value="mjet"> Multirole Fighter</option>
+                        <option value="tratt"> Transport and Attack Aircraft</option>
+                        <option value="theli"> Transport Helicopter</option>
+                        <option value="theli"> Attack Helicopter</option>
+                        <option value="bomber"> Bomber</option>
+                    </select>
+                </label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <strong> Available Aircraft: </strong>
+                <table border="solid">
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th colspan="2">NATO Callsign</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li> Multirole Fighter</li>
+                                <li> Air Superiority Fighter</li>
+                                <li> Transport and Attack Aircraft</li>
+                                <li> Transport Helicopter</li>
+                                <li> Attack Helicopter</li>
+                            </ul>
+                        </td>
+
+                        <td>
+                            <ol>
+                                <li> F-35 Lightning II</li>
+                                <li> F-16 Fighting Falcon</li>
+                                <li> AC-130 Spartan</li>
+                                <li> UH1- Huey</li>
+                                <li> AH-64 Apache</li>
+                            </ol>
+                        </td>
+
+                        <td>
+                            <ul>
+                                <li> SA-X Gainful</li>
+                                <li>
+                                    <ul>
+                                        <li> SA-6</li>
+                                        <li> SA-7</li>
+                                        <li> SA-9</li>
+                                    </ul>
+                                </li>
+                                <li>Flanker</li>
+                                <li>Flipper</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ol type="a">
+                                <li> Frogfoot</li>
+                                <li> Harbuz</li>
+                                <li> Haitun</li>
+                                <li> Fulcrum</li>
+                            </ol>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td><strong> Eligible Ranks: </strong>
+                <table border="solid">
+                    <tr>
+                        <th><label>
+                            <input type="checkbox" name="lt" style="text-align: left">
+                        </label> Lt
+                        </th>
+                        <th><label>
+                            <input type="checkbox" name="cg">
+                        </label> CO
+                        </th>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left; color:royalblue"> Lieutenant
+                            <ol style="height: 120px">
+                                <li> O-1 2nd Lieutenant, 2ndLt</li>
+                                <li> O-2 Lieutenant, 1stLt</li>
+                            </ol>
+                        </td>
+
+                        <td align="left" style="text-align: left; color: darkblue"> Field-Grade
+                            <ol style="white-space: nowrap;">
+                                <li> O-3 Captain, Cap</li>
+                                <li> O-4 Major, Maj</li>
+                                <li>
+                                    O-5 Colonel, Col
+                                    <ul>
+                                        <li> O-51 Lieutenant Colonel, LCol</li>
+                                        <li> O-52 Major Colonel, MCol</li>
+                                        <li> O-53 General Colonel, GCol</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label>
+                    <textarea name="notes" rows="10" cols="30">Medical notes.</textarea>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Enlist">
+                <input type="reset">
+            </td>
+        </tr>
+
+        <tr>
+            <td align="right">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Mark_of_the_United_States_Air_Force.svg/800px-Mark_of_the_United_States_Air_Force.svg.png"
+                     width="300" height="300" align="right" alt="">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
