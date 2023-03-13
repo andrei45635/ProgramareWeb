@@ -4,32 +4,32 @@
     <title>Sortie Registration</title>
 </head>
 
-<body>
+<body style="background-color: skyblue">
 <h1 style="color:seagreen;"> Pilot registration </h1>
 <h3 style="color:darkblue;"> United States Air Force Central Command
     <br> Arlington County, Virginia, United States
 </h3>
 <h5>
-    <a href="https://www.af.mil/" style="color:steelblue;"> USAF - CENT </a>
+    <a href="https://www.af.mil/" style="color:red;"> USAF - CENT </a>
 </h5>
 <form method="GET">
     <table>
         <tr>
-            <td align="left"><label>
+            <td><label>
                 <strong> First Name: </strong>
                 <input type="text" name="firstname" style="text-align: left;">
             </label></td>
         </tr>
 
         <tr>
-            <td align="left"><label>
+            <td><label>
                 <strong> Last Name: </strong>
                 <input type="text" name="lastname" style="text-align: left;">
             </label></td>
         </tr>
 
         <tr>
-            <td align="left">
+            <td>
                 <label>
                     <strong> CO Type: </strong>
                     <input type="checkbox" name="cog">
@@ -41,7 +41,7 @@
         </tr>
 
         <tr>
-            <td align="left">
+            <td>
                 <strong> Base: </strong>
                 <label>
                     <input type="text" name="base">
@@ -50,14 +50,14 @@
         </tr>
 
         <tr>
-            <td align="left"><label>
+            <td><label>
                 <strong> Current domicile: </strong>
                 <input type="text" name="domicile" required>
             </label></td>
         </tr>
 
         <tr>
-            <td align="left">
+            <td>
                 <strong> Country of Origin: </strong>
                 <label>
                     <select name="country">
@@ -71,35 +71,35 @@
         </tr>
 
         <tr>
-            <td align="left"><label>
+            <td><label>
                 <strong> Rank: </strong>
                 <input type="text" name="rank" required>
             </label></td>
         </tr>
 
         <tr>
-            <td align="left"><label>
+            <td><label>
                 <strong> Serial Number: </strong>
                 <input type="text" name="serial" required>
             </label></td>
         </tr>
 
         <tr>
-            <td align="left"><label>
+            <td><label>
                 <strong> Email: </strong>
                 <input type="email" name="email" required>
             </label></td>
         </tr>
 
         <tr>
-            <td align="left"><label>
+            <td><label>
                 <strong> Date of Birth: </strong>
                 <input type="date" name="birthday">
             </label></td>
         </tr>
 
         <tr>
-            <td align="left"><label>
+            <td><label>
                 <strong> Gender: </strong>
                 <input type="radio" name="gender" value="Male">
             </label> Male
@@ -110,7 +110,7 @@
         </tr>
 
         <tr>
-            <td align="left">
+            <td>
                 <strong> Carrier: </strong>
                 <label>
                     <select name="carrier">
@@ -125,7 +125,7 @@
         </tr>
 
         <tr>
-            <td align="left">
+            <td>
                 <strong> Preferred Aircraft: </strong>
                 <br>
                 <label>
@@ -145,7 +145,7 @@
         <tr>
             <td>
                 <strong> Available Aircraft: </strong>
-                <table border="solid">
+                <table>
                     <tr>
                         <th>Name</th>
                         <th>Type</th>
@@ -201,7 +201,7 @@
 
         <tr>
             <td><strong> Eligible Ranks: </strong>
-                <table border="solid">
+                <table>
                     <tr>
                         <th><label>
                             <input type="checkbox" name="lt" style="text-align: left">
@@ -220,7 +220,7 @@
                             </ol>
                         </td>
 
-                        <td align="left" style="text-align: left; color: darkblue"> Field-Grade
+                        <td style="text-align: left; color: darkblue"> Field-Grade
                             <ol style="white-space: nowrap;">
                                 <li> O-3 Captain, Cap</li>
                                 <li> O-4 Major, Maj</li>
@@ -252,14 +252,9 @@
                 <input type="reset">
             </td>
         </tr>
-
-        <tr>
-            <td align="right">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Mark_of_the_United_States_Air_Force.svg/800px-Mark_of_the_United_States_Air_Force.svg.png"
-                     width="300" height="300" align="right" alt="">
-            </td>
-        </tr>
     </table>
+     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Mark_of_the_United_States_Air_Force.svg/800px-Mark_of_the_United_States_Air_Force.svg.png"
+                     width="300" height="300" alt="">
 </form>
 </body>
 </html>
