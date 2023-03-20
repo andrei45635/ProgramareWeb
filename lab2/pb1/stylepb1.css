@@ -1,0 +1,19 @@
+#txtchild {
+    word-wrap: break-word;
+    text-align: center;
+    width: 200px;
+}
+
+#imgchild {
+    content: url("One_Ring_Blender_Render.png");
+    float: right;
+    width: 200px;
+}
+
+.parentDiv{
+    border: 5px solid #FF0000;
+    padding: 10px;
+    height: 200px;
+    width: 350px;
+    display: flex;
+}
