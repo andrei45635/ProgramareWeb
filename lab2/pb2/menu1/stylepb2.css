@@ -7,15 +7,19 @@ body{ min-height:100vh; margin:0; position:relative; }
 header{ min-height:50px; background:red; }
 footer{ background:pink; }
 
-menu{
-    background-color: yellow;
-    display: flex;
-    list-style: none;
-    text-align: left;
-    width: 100%;
-    column-count: 5;
-    column-gap: 40px;
-    column-rule: 1px solid black;
+.menu {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: green;
+  display: flex;
+  flex-direction: row;
+}
+.menu li {
+  list-style: none;
+  flex: 1;
+  background-color: yellow;
+  border: 1px solid green;
 }
 
 body {

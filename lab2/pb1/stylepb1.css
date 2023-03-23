@@ -1,20 +1,22 @@
-div #txtchild {
-    word-wrap: break-word;
+#txtchild {
     text-align: center;
+    position: relative;
     width: 200px;
-    display: flex;
+    vertical-align: middle;
 }
 
-div #imgchild {
+#imgchild {
+    position: relative;
     content: url("One_Ring_Blender_Render.png");
     width: 200px;
-    display: flex;
+    transform-origin: 50% 50%;
+    float: right;
+    align-content: center;
 }
 
 .parentDiv{
     border: 5px solid #FF0000;
-    padding: 10px;
-    height: 200px;
     width: 400px;
     display: flex;
+    box-sizing: border-box;
 }
