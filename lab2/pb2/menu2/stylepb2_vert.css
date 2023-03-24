@@ -1,6 +1,6 @@
 .myHeader {
     background-color: #FF0000;
-    height: 50px;
+    height: 30%;
 }
 
 body {
@@ -16,6 +16,8 @@ body {
     background-color: green;
     flex-direction: column;
     float: left;
+    height: 60%;
+    list-style-type: none;
 }
 
 .menu li {
@@ -28,8 +30,8 @@ body {
 
 }
 
-.freeElement{
-    height: 850px;
+article{
+    height: 60%;
 }
 
 body::after {
@@ -44,5 +46,5 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 50px;
+    height: 10%;
 }

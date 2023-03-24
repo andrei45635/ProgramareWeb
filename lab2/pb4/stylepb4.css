@@ -1,0 +1,17 @@
+.navlist {
+    position: relative;
+}
+
+.navlist li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+}
+
+#fb{
+    background: url("img.png") 0 0;
+    left: 0;
+    width: 46px;
+}
