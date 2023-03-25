@@ -1,0 +1,32 @@
+#nume, #prenume {
+    background: repeating-linear-gradient(90deg, white 0px, white 19px, black 20px);
+    height: 18px;
+    background-size: 20px;
+    padding: 3px 0 0;
+    letter-spacing: 13px;
+    display: inline-block;
+    float: left;
+    font-size: 13px;
+    width: 380px;
+}
+
+#CNP {
+    background: repeating-linear-gradient(90deg, white 0px, white 19px, black 20px);
+    height: 18px;
+    background-size: 20px;
+    padding: 3px 0 0;
+    letter-spacing: 12px;
+    display: inline-block;
+    float: left;
+    font-size: 13px;
+    width: 240px;
+}
+
+label {
+    display: inline-block;
+    float: left;
+    clear: left;
+    padding-right: 25px;
+    width: 250px;
+    text-align: right;
+}
