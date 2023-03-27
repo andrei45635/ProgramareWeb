@@ -41,12 +41,13 @@ ul li::after {
 .alice::before {
     width: 110px;
     height: 110px;
-    /*background: url('tes3.png') calc(-140px * 3) 0;*/
-    background: url('tes3.png') 0 0;
+    background: url('tes3.png') calc(-140px * 3) 0;
+    /*background: url('tes3.png') 0 0;*/
 }
 
 .bob::before {
     width: 110px;
     height: 110px;
-    background: url('tes3.png') -138px -0px;
+    /*background: url('tes3.png') -138px -0px;*/
+    background: url("tes3.png") calc(-138px * 3) -575px;
 }

@@ -1,0 +1,57 @@
+.myHeader {
+    background-color: #FF0000;
+    height: 30%;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
+}
+.content{
+    background-color: yellow;
+    display: flex;
+}
+
+.menu {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    background-color: yellow;
+    list-style-type: none;
+}
+nav{
+    float:left;
+    background-color: yellow;
+    width:30%;
+    height: 825px;
+    list-style-type: none;
+}
+article{
+    background-color: green;
+    height: 825px;
+}
+
+ul li {
+    border-bottom: 1px solid black;
+    list-style-type: none;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+.mainView{
+    float: left;
+    height: 100%;
+    background-color: green;
+}
+
+footer {
+    background-color: pink;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+}

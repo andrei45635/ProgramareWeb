@@ -3,6 +3,12 @@
     height: 50px;
 }
 
+nav{
+    background-color: yellow;
+    width:100%;
+    list-style-type: none;
+}
+
 body {
     min-height: 100vh;
     margin: 0;
@@ -18,7 +24,7 @@ footer {
     background: pink;
 }
 
-.menu {
+ul {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -27,7 +33,7 @@ footer {
     flex-direction: row;
 }
 
-.menu li {
+ul li {
     list-style: none;
     flex: 1;
     background-color: yellow;
