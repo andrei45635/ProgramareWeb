@@ -24,10 +24,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const newRows = Array.from(rows); //shallow-copy of rows
 
         const direction = directions[index] || 'asc';
-            let multiplier;
-            if (direction === 'asc') {
-                multiplier = 1;
-            } else multiplier = -1;
+        let multiplier;
+        if (direction === 'asc') {
+            multiplier = 1;
+        } else multiplier = -1;
 
         newRows.sort(function (rowA, rowB) {
             const cellA = rowA.querySelectorAll('td')[index].innerHTML;
