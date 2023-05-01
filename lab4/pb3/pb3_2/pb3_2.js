@@ -4,8 +4,10 @@ let flippedCard = false;
 let first, second;
 let lockBoard = false; //locking the board so only 2 cards can be flipped at once
 let matchCounter = 0;
+let clickCounter = 0;
 
 function flipCard() {
+    clickCounter++;
     if (lockBoard) return;
     if (this === first) return; //checks to see if the player clicked on the same card twice
 
@@ -25,8 +27,12 @@ function checkForMatch() {
         first.removeEventListener('click', flipCard);
         second.removeEventListener('click', flipCard);
         matchCounter++;
-        resetBoard();
-        if (matchCounter >= 6) setTimeout(() => window.alert("Congrats, you won! Refresh the page to keep playing!"), 1000);
+        [flippedCard, lockBoard] = [false, false];
+        [first, second] = [null, null];
+        if (matchCounter >= 6) {
+            setTimeout(() => window.alert("Congrats, you won! Refresh the page to keep playing!"), 1000);
+            document.getElementById('won').innerHTML = "Congrats! You won in: " + clickCounter.toString() + " clicks";
+        }
         return;
     }
 
