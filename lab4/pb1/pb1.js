@@ -3,7 +3,7 @@ function FirstToSecond(){
     const second = document.getElementById("list2");
     const selectedItemFirstList = first.selectedIndex;
     const element = first[selectedItemFirstList];
-    second.add(element);
+    second.appendChild(element);
 }
 
 function SecondToFirst(){
@@ -11,6 +11,6 @@ function SecondToFirst(){
     const second = document.getElementById("list2");
     const selectedItemSecondList = second.selectedIndex;
     const element = second[selectedItemSecondList];
-    first.add(element);
+    first.appendChild(element);
 }
 
