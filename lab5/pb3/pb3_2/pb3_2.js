@@ -1,4 +1,4 @@
-const cards = document.querySelectorAll('.card');
+const cards = $('.card').toArray();
 
 let flippedCard = false;
 let first, second;
@@ -11,7 +11,7 @@ function flipCard() {
     if (lockBoard) return;
     if (this === first) return; //checks to see if the player clicked on the same card twice
 
-    this.classList.add('flip');
+    $(this).addClass('flip');
     if (!flippedCard) {
         flippedCard = true;
         first = this;
@@ -22,25 +22,25 @@ function flipCard() {
 }
 
 function checkForMatch() {
-    clickCounter +=2;
-    if (first.dataset.prof === second.dataset.prof) {
+    clickCounter += 2;
+    if ($(first).data('prof') === $(second).data('prof')) {
         //disabling the cards, so we can't click on them again
-        first.removeEventListener('click', flipCard);
-        second.removeEventListener('click', flipCard);
+        $(first).off('click', flipCard);
+        $(second).off('click', flipCard);
         matchCounter++;
         [flippedCard, lockBoard] = [false, false];
         [first, second] = [null, null];
         if (matchCounter >= 6) {
             setTimeout(() => window.alert("Congrats, you won! Refresh the page to keep playing!"), 1000);
-            document.getElementById('won').innerHTML = "Congrats! You won in: " + clickCounter.toString() + " clicks";
+            $('#won').html("Congrats! You won in: " + clickCounter.toString() + " clicks");
         }
         return;
     }
     lockBoard = true;
     //unflipping the cards if the match is incorrect
     setTimeout(() => {
-        first.classList.remove('flip');
-        second.classList.remove('flip');
+        $(first).removeClass('flip');
+        $(second).removeClass('flip');
         resetBoard();
     }, 1000);
 }
@@ -51,7 +51,9 @@ function resetBoard() {
 }
 
 (function shuffle() {
-    cards.forEach(card => card.style.order = Math.floor(Math.random() * 12).toString())
+    $('.card').each(function() {
+        $(this).css('order', Math.floor(Math.random() * 12).toString());
+    });
 })();
 
-cards.forEach(card => card.addEventListener('click', flipCard));
+$(cards).on('click', flipCard);
