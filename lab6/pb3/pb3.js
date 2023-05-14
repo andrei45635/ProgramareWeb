@@ -22,8 +22,8 @@ function getProfiles() {
     xhttp.send(null);
 }
 
-function save(){
-    if(true === confirm("Do you really want to update?")){
+function save() {
+    if (true === confirm("Do you really want to update?")) {
         console.log(lastModifiedValues);
         const firstName = lastModifiedValues[0];
         const lastName = lastModifiedValues[1];
@@ -37,7 +37,7 @@ function save(){
                 confirm("Updated!");
             }
         };
-        xhttp.open("GET", "http://localhost/pb3_update.php?id="+selectedProfile.studentid+"&fname="+firstName+"&lname="+lastName+"&pnum="+phone+"&email="+email, true);
+        xhttp.open("GET", "http://localhost/pb3_update.php?id=" + selectedProfile.studentid + "&fname=" + firstName + "&lname=" + lastName + "&pnum=" + phone + "&email=" + email, true);
         xhttp.send(null);
     }
 }
