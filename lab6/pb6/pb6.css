@@ -1,0 +1,23 @@
+#title{
+    padding: 10px;
+    text-align: center;
+}
+
+#selects{
+    padding: 25px;
+    text-align: left;
+    justify-content: left;
+    border: 1px solid black;
+    width: 15%;
+}
+
+#result{
+    float: right;
+    padding-left: 25px;
+    border: 1px solid black;
+    width: 85%;
+}
+
+#main{
+    display: flex;
+}
