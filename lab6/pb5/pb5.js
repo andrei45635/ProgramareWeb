@@ -14,7 +14,7 @@ function getFolders(id) {
     let $ul = elem.children(":first"); // first child element with #id
 
     let request = new XMLHttpRequest();
-    request.onreadystatechange = function () {
+    request.onload = function () {
         if (request.readyState === 4 && request.status === 200) {
             const folders = JSON.parse(this.responseText);
             if (folders.length === 2) {
@@ -48,8 +48,6 @@ function getFolders(id) {
                     $ul.append(newListElem);
                 }
             }
-        } else {
-            alert('Eroare request.status getfolders' + request.status);
         }
     };
     request.open("GET", "http://localhost/pb5_getFolders.php?path=" + path, true);
@@ -59,7 +57,7 @@ function getFolders(id) {
 function getFile(id) {
     let path = dict[id];
     let request = new XMLHttpRequest();
-    request.onreadystatechange = function () {
+    request.onload = function () {
         if (request.readyState === 4 && request.status === 200) {
             const content = this.responseText;
             $('#explorer').val(content);

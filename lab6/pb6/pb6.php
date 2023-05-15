@@ -26,6 +26,5 @@ while ($statement->fetch()) {
     );
 }
 
-
 $jsonstring = json_encode($json);
 echo $jsonstring;

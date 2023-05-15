@@ -7,17 +7,38 @@
     padding: 25px;
     text-align: left;
     justify-content: left;
-    border: 1px solid black;
     width: 15%;
+    font-size: large;
 }
 
 #result{
     float: right;
     padding-left: 25px;
-    border: 1px solid black;
     width: 85%;
+}
+
+#resultTable{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
 }
 
 #main{
     display: flex;
+}
+
+th{
+    background: lightblue;
+    font-size: x-large;
+}
+
+td{
+    background: antiquewhite;
+    text-align: center;
+    font-size: x-large;
+}
+
+td, th, tr{
+    border: 1px solid black;
 }

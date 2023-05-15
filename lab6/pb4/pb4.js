@@ -29,7 +29,7 @@ function sendToServer(str) {
                 console.log('sdasda', str);
                 document.getElementById((parseInt(this.responseText) + 1).toString()).innerHTML = "O";
                 let response = parseInt(this.responseText);
-                board[response - 1] = "O";
+                board[response] = "O";
                 console.log(response - 1);
                 console.log(board.join(""));
             }

@@ -12,7 +12,7 @@ function updateHTML(data) {
         tableRow.append($("<td>").text(data[i].producator));
         tableRow.append($("<td>").text(data[i].cpu));
         tableRow.append($("<td>").text(data[i].memorie));
-        tableRow.append($("<td>").text(data[i].capacitateHdd));
+        tableRow.append($("<td>").text(data[i].capacitatehdd));
         tableRow.append($("<td>").text(data[i].gpu));
         $("#resultTable").append(tableRow);
     }
