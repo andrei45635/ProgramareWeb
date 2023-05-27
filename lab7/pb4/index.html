@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 4</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div class="nebula-container">
+    <div class="nebula"></div>
+</div>
+<div class="forms-container">
+    <div class="authentication-form-container">
+        <form id="authentication" action="http://localhost/lab7/pb4/authentication.php" method="POST">
+            <label>
+                <input type="text" name="username" placeholder="Your Username Here" required>
+            </label>
+            <br>
+            <label>
+                <input type="text" name="password" placeholder="Your Password Here" required>
+            </label>
+            <br>
+            <input type="submit" value="Login">
+        </form>
+        <br>
+    </div>
+
+    <div class="registration-form-container">
+        <form action="http://localhost/lab7/pb4/add_user.php" method="POST">
+            <label>
+                <input type="text" name="email" placeholder="Your Email Here" required>
+            </label>
+            <br>
+            <label>
+                <input type="text" name="username" placeholder="Your Username Here" required>
+            </label>
+            <br>
+            <label>
+                <input type="text" name="password" placeholder="Your Password Here" required>
+            </label>
+            <br>
+            <input type="submit" value="Sign up">
+        </form>
+    </div>
+</div>
+</body>
+</html>
