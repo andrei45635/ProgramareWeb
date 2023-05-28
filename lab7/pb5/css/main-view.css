@@ -1,0 +1,26 @@
+a:hover, .delta:hover{
+    color:green;
+}
+
+body {
+    background: radial-gradient(circle, lightcyan, lightblue);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrappermain {
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.topnav {
+    margin-bottom: 20px;
+}
