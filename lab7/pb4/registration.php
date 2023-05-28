@@ -30,10 +30,6 @@ if (count($usernameMatches) == 0 || count($pwdMatches) == 0 || count($emailMatch
             $subject = "This is subject";
             $message = "<h1>This is headline.</h1>";
             $header = "Content-type: text/html\r\n";
-
-            ini_set('SMTP','smtp.gmail.com');
-            ini_set('smtp_port',25);
-            ini_set('sendmail_from', "iacob.andrei34@gmail.com");
             $retval = mail($to, $subject, $message, $header);
 
             if ($retval) {
