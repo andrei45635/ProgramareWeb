@@ -12,8 +12,6 @@ while ($row = mysqli_fetch_array($res)) {
     $username = $row['username'];
 }
 
-$msg = '';
-
 if(isset($_POST['upload'])){
     $image = $_FILES['image']['name'];
     $tempname = $_FILES['image']['tmp_name'];
