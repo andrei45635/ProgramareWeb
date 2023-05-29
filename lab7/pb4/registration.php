@@ -26,6 +26,8 @@ if (count($usernameMatches) == 0 || count($pwdMatches) == 0 || count($emailMatch
         if ($arr[0] == 1) {
             echo '<script>alert("User is already logged in!")</script>';
         } else {
+            ini_set('smtp', 'smtp.gmail.com');
+            ini_set('smtp_port', 25);
             $to = "iacob.andrei34@gmail.com";
             $subject = "This is subject";
             $message = "<h1>This is headline.</h1>";

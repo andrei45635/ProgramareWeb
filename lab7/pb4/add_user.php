@@ -27,6 +27,8 @@ if (count($usernameMatches) == 0 && count($pwdMatches) == 0 && count($emailMatch
         if ($arr[0] == 1) {
             echo '<script>window.alert("User is already logged in!")</script>';
         } else {
+            ini_set("SMTP", "ssl://smtp.gmail.com");
+            ini_set("smtp_port", "465");
             $message = "Hi! You just registered for this dumb app!";
             $content = 'Why would you do this?';
             $headers = "From: " . $email ."\r\n";

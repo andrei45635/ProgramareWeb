@@ -23,6 +23,11 @@ $statement->execute();
 $statement->bind_result($totalProducts);
 $statement->fetch();
 
+if($pageLimit > $totalProducts){
+    echo "<script>window.alert('Please input a different, lower number') </script>";
+    header("Location: http://localhost/lab7/pb2/index.html");
+}
+
 $productsOnPage = ceil($totalProducts / $pageLimit);
 
 $statement->close();
